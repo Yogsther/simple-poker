@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style class></style>
+    <title>Simple Poker</title>
+</head>
+
+<body>
+
+    <div id="logig-page">
+        <h3>Create a room</h3>
+        <input type="text" placeholder="Room name" oninput="checkRoomName(this)" id="room-name"><br>
+        <input type="text" placeholder="Username" id="username"><br>
+        <button onclick="createRoom()">Go!</button>
+    </div>
+
+    <div class="wrap">
+
+
+        <div id="players">
+            <span class="player">
+                <span class="username">Yogsther</span>
+                <span class="status">Bet: $15</span>
+            </span>
+       
+        
+        </div>
+
+        <div id="board">
+
+            <div id="board-cards">
+                <div class="card board-card"></div>
+                <div class="card board-card"></div>
+                <div class="card board-card"></div>
+                <div class="card board-card"></div>
+                <div class="card board-card"></div>
+            </div>
+
+
+            <div class="card your-card">
+                <span class="card-type">J</span>
+                <img src="img/hearts.png" alt="Clubs" title="Clubs" class="card-icon">
+            </div>
+            <div class="card your-card">
+                <span class="card-type">10</span>
+                <img src="img/spades.png" alt="Clubs" title="Clubs" class="card-icon">
+            </div>
+
+        </div>
+
+        <div id="control-panel">
+            <span class="your-name field">Yogsther</span>
+            <span class="your-bank field">$2540</span>
+        </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

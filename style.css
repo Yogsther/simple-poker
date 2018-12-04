@@ -1,0 +1,133 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+#board{
+    width: 100%;
+    background: rgb(223, 223, 223);
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+#players{
+    width: 100%;
+}
+
+.player{
+    font-size: 20px;
+    display: inline-block;
+    width: 96%;
+    background: rgb(236, 236, 236);
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 2%;
+    
+}
+
+.money{
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.status{
+    display: inline-block;
+    float: right;
+    color: rgb(108, 207, 108);
+}
+
+.bet{
+    color: rgb(255, 86, 86);
+}
+
+.card {
+    border-radius: 7px;
+    width: 80px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border: solid 3px black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.your-card{
+    transition: all .2s;
+    float: right;
+    top: 95px;
+    margin-right: 20px;
+}
+
+.your-card:hover{
+    top: 85px;
+}
+
+.card-type{
+    font-size: 40px;
+    font-weight: 900;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.card-icon{
+    bottom: 18px;
+    right: 5px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+}
+
+#control-panel{
+    width: 100%;
+    height: 110px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: rgb(236, 236, 236);
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, .05);
+    display: block;
+    position: relative;
+}
+
+#board-cards{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    top: 40px;
+
+}
+
+.board-card{
+    margin: 5px;
+    transition: all .1s;
+}
+
+.board-card:hover{
+    transform: scale(1.05);
+}
+
+
+.wrap{
+    width: 90%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.field{
+    font-size: 30px;
+    display: block;
+}
+
+.your-bank{
+    float: right;
+}
